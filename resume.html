@@ -1,22 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Keri's Resume:</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+<link rel="stylesheet" href="style.css">
 <style>
-
-        .pdf-viewer {
-
-            width: 100%;
-
-            height: 100vh; /* 100% of the viewport height */
-
-            border: none; /* Removes default border */
-
-        }
+    .pdf-viewer {
+        width: 100%;
+        height: min(85vh, 1000px);
+        border: none;
+        border-radius: 1rem;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.14);
+    }
 </style>
 </head>
 <body>
-<embed src="Resume.pdf" type="application/pdf" class="pdf-viewer" title="Embedded PDF Viewer" />
+    <header class="site-header">
+        <div class="site-shell site-hero">
+            <h1>Resume</h1>
+            <p>Preview my resume below or open the PDF directly from this page.</p>
+        </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+        <ul class="nav-list">
+            <li><a href="home.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path><path d="M9 20v-6h6v6"></path></svg>Home</a></li>
+            <li><a href="Aboutme.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="8" r="4"></circle></svg>About Me</a></li>
+            <li><a class="active" href="resume.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v4h4"></path><path d="M9 11h6"></path><path d="M9 15h6"></path></svg>Resume</a></li>
+            <li><a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="site-main">
+        <section class="page-panel">
+            <embed src="Resume.pdf" type="application/pdf" class="pdf-viewer" title="Embedded PDF Viewer" />
+        </section>
+    </main>
 </body>
 </html>
 
