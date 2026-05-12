@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keri Gagnow | About Me</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
-        <div class="site-shell site-hero">
-            <h1>About Me</h1>
-            <p>Computer science student with a strong interest in web development, machine learning, data analysis, and software engineering.</p>
+
+  <header class="site-header">
+    <div class="site-shell site-hero">
+      <span class="hero-tag">A little about me</span>
+      <h1>About me</h1>
+      <p>Computer science student with a strong interest in web development, machine learning, data analysis, and software engineering.</p>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Primary navigation">
+    <ul class="nav-list">
+      <li><a href="home.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10.5V20h14v-9.5"/><path d="M9 20v-6h6v6"/></svg>Home</a></li>
+      <li><a class="active" href="Aboutme.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>About me</a></li>
+      <li><a href="resume.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M9 11h6"/><path d="M9 15h6"/></svg>Resume</a></li>
+      <li><a href="projects.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Projects</a></li>
+      <li><a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>Contact</a></li>
+      <li><a href="beyond.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4.5 8-11.8A8 8 0 0 0 12 2a8 8 0 0 0-8 8.2C4 17.5 12 22 12 22z"/></svg>Beyond the code</a></li>
+    </ul>
+  </nav>
+
+  <main class="site-main">
+
+    <section class="page-panel">
+      <p class="section-label">Education</p>
+      <h2 class="section-title">Education &amp; interests</h2>
+      <p>I'm currently a junior at the University of St. Thomas in Minnesota, majoring in Computer Science with a minor in Data Science. For the past few years, I've been actively involved in personal and class projects that have helped me build real skills and prepare for future opportunities.</p>
+    </section>
+
+    <section>
+      <p class="section-label">Campus involvement</p>
+      <div class="involvement-card">
+        <div class="involvement-item">
+          <div class="involve-dot" style="background: var(--orange);"></div>
+          <div class="involve-text">
+            <h4>Computer Science Club — Treasurer <span class="involve-badge" style="background: var(--orange-light); color: var(--orange);">Dec 2025 – Present</span></h4>
+            <p>I serve on the club's executive board managing finances, budgets, and EOY audits with Student Affairs. It's taught me a lot about responsibility and organization outside of the classroom.</p>
+          </div>
         </div>
-    </header>
+        <div class="involvement-item">
+          <div class="involve-dot" style="background: var(--lavender);"></div>
+          <div class="involve-text">
+            <h4>Computer Science Club — Member <span class="involve-badge" style="background: var(--lavender-light); color: var(--lavender);">Feb 2024 – Present</span></h4>
+            <p>Participating in coding competitions, hackathons, and mini group projects. A great way to connect with students, alumni, and faculty.</p>
+          </div>
+        </div>
+        <div class="involvement-item">
+          <div class="involve-dot" style="background: var(--pink);"></div>
+          <div class="involve-text">
+            <h4>French Club — Member <span class="involve-badge" style="background: var(--pink-light); color: var(--pink);">Feb 2024 – Present</span></h4>
+            <p>As a CS student, I believe that learning a second language enhances problem-solving and broadens cultural perspective. French has been a personal passion of mine for years.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <nav class="site-nav" aria-label="Primary navigation">
-        <ul class="nav-list">
-            <li><a href="home.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11.5 12 4l9 7.5"></path><path d="M5 10.5V20h14v-9.5"></path><path d="M9 20v-6h6v6"></path></svg>Home</a></li>
-            <li><a class="active" href="Aboutme.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 21a8 8 0 0 0-16 0"></path><circle cx="12" cy="8" r="4"></circle></svg>About Me</a></li>
-            <li><a href="resume.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h8l4 4v14H7z"></path><path d="M15 3v4h4"></path><path d="M9 11h6"></path><path d="M9 15h6"></path></svg>Resume</a></li>
-            <li><a href="contact.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>Contact</a></li>
-            <li><a href="projects.html"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>Projects</a></li>
-        </ul>
-    </nav>
+    <section>
+      <p class="section-label">Skills</p>
+      <div class="skills-card">
+        <p style="color: var(--text-muted); font-size: 0.875rem; margin: 0 0 0.75rem;">A mix of languages, tools, and technologies I've worked with through coursework and projects.</p>
+        <div class="skill-tags">
+          <span class="tag orange">Java</span>
+          <span class="tag orange">Python</span>
+          <span class="tag orange">Kotlin</span>
+          <span class="tag orange">R</span>
+          <span class="tag lavender">React</span>
+          <span class="tag lavender">HTML &amp; CSS</span>
+          <span class="tag lavender">JavaScript</span>
+          <span class="tag pink">Data mining</span>
+          <span class="tag pink">Machine learning</span>
+          <span class="tag pink">Regression analysis</span>
+          <span class="tag pink">Multivariate analysis</span>
+          <span class="tag purple">Microsoft Azure</span>
+          <span class="tag purple">Salesforce CRM</span>
+          <span class="tag purple">Office 365</span>
+          <span class="tag purple">Canvas LMS</span>
+          <span class="tag purple">IntelliJ IDEA</span>
+        </div>
+      </div>
+    </section>
 
-    <main class="site-main">
-        <section class="page-panel">
-            <h2 class="section-title">Education and Interests</h2>
-            <p>I am currently a junior at the University of St. Thomas in Minnesota majoring in Computer Science with a minor in Data Science.</p>
-            <p>For the past few years, I have been actively involved with personal projects that have helped me build my skills and prepare for future opportunities.</p>
+  </main>
 
-            <h3>Campus Involvement</h3>
-            <p>On top of my academic life, I am currently involved in two student organizations on campus, which allows me to connect with students, alumni, and faculty members.</p>
-            <p><strong>St. Thomas Computer Science Club:</strong> I serve on the club's executive board as Treasurer, where I am in charge of the club's finances, budgets, and EOY audits with Student Affairs.</p>
-            <p><strong>St. Thomas French Club:</strong> As a Computer Science student, I believe that learning a second language enhances my problem-solving abilities and broadens my cultural perspective.</p>
+  <footer class="site-footer">
+    <p>Keri Gagnow &middot; University of St. Thomas &middot; <a href="https://github.com/kerigagnow" target="_blank" style="color: var(--orange);">github.com/kerigagnow</a></p>
+  </footer>
 
-            <h3>Skills</h3>
-            <p>JavaScript, Java, Python, React, Data Analysis, Machine Learning, Visual Studio, IntelliJ IDEA, Microsoft Azure, and Salesforce CRM.</p>
-        </section>
-    </main>
 </body>
 </html>
