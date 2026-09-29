@@ -2,11 +2,88 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=home.html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting</title>
+    <title>Keri Gagnow | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Redirecting to <a href="home.html">home.html</a>...</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#home" class="logo">KeriGagnow_</a>
+        <ul class="nav-links">
+            <li><a href="#home" class="nav-item">Home</a></li>
+            <li><a href="#about" class="nav-item">About</a></li>
+            <li><a href="#projects" class="nav-item">Projects</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <h1 class="hero-title">Keri Gagnow</h1>
+            <p class="hero-subtitle">CS + Data Science @ University of St. Thomas</p>
+            <p class="hero-blurb">As a CS and Data Science student, I have a long-time passion for creating innovative solutions for our ever-changing modern world.</p>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/keri-gagnow" target="_blank" class="social-link">LinkedIn</a>
+                <a href="https://www.github.com/kerigagnow" target="_blank" class="social-link">GitHub</a>
+                <a href="https://www.salesforce.com/trailblazer/keri-gagnow" target="_blank" class="social-link">Salesforce Trailblazer</a>
+                <a href="mailto:gagnowkeri@gmail.com" class="social-link">Email</a>
+            </div>
+
+            <!-- Resume Button -->
+            <a href="Resume - Keri Gagnow.pdf" target="_blank" class="btn-resume">Download Resume</a>
+        </section>
+
+<!-- About Section -->
+        <section id="about">
+            <h2 class="page-title">About Me</h2>
+            <p class="lead-text">Passionate about technology, embraced by innovative solutions.</p>
+            <p>I am an undergraduate student studying Computer Science and Data Science, currently diving deep into algorithms, database design, and computer architecture. Beyond the terminal, I hold a student club leadership role on campus, where I focus on technical growth and community building.</p>
+            <p>Balancing a rigorous technical curriculum, a daily campus commute, and active involvement in campus life requires serious discipline. Alongside my primary leadership role, I am a proud member of the Association of Women in Science and the French Club. When I am not debugging code, you can usually find me getting an early workout in on the elliptical, prepping overnight oats for the week, or practicing for my weekly flute lessons.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="page-title">Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div>
+                        <h3>Mental Health Data Analysis</h3>
+                        <p>Conducted exploratory data analysis and visualization on mental health datasets for DASC360. Extracted demographic trends and deployed interactive findings to showcase risk factor correlations.</p>
+                        <div class="tech-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KeriGagnow/DASC360_FinalProject_GroupG" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div>
+                        <h3>Sustainability Quiz </h3>
+                        <p>Developed an interactive, educational Java application focused on environmental sustainability concepts. Created with the Office of Sustainability Initiatives, it keeps track of user progress, user-friendly interface, and engaging content.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">GUI</span>
+                            <span class="tag">Sustainability</span>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/KeriGagnow/UST-Sustainability-Quiz" target="_blank">GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>
