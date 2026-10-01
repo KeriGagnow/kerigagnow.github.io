@@ -248,3 +248,40 @@ h1, h2, h3 {
         font-size: 2.5rem;
     }
 }
+/* SKILLS & COURSEWORK LAYOUT */
+.skills-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.skills-column p {
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.course-list {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+.course-list li {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.course-list strong {
+    color: var(--accent-cyan);
+    display: block;
+    margin-bottom: 0.25rem;
+    font-family: var(--font-mono);
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .skills-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
