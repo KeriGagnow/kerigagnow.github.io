@@ -1,0 +1,4 @@
+- [x] Add static export and GitHub Pages deployment workflow.
+- [x] Test export checks and existing portfolio routing.
+- [x] Document the one-time GitHub Pages setup.
+- [ ] Verify the first deployment on GitHub (requires the source repository and Pages settings to be configured by its owner).
