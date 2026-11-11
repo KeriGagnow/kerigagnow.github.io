@@ -43,6 +43,22 @@ const projects = [
     tags: ["Java", "GUI", "Sustainability"],
     link: "https://github.com/KeriGagnow/UST-Sustainability-Quiz",
   },
+  {
+    emoji: "🗣️",
+    title: "AAC Desktop App",
+    blurb: "A desktop augmentative and alternative communication (AAC) app that helps users express themselves.",
+    detail: "Designed an accessible interface for building and speaking phrases, focused on speed and ease of use for everyday communication.",
+    tags: ["Desktop App", "Accessibility", "UI Design"],
+    link: "https://github.com/KeriGagnow",
+  },
+  {
+    emoji: "📄",
+    title: "DASC400 Research Paper",
+    blurb: "A research paper written for DASC400, applying data science methods to a real-world question.",
+    detail: "Carried out the full research process — from question and data collection to analysis and written findings.",
+    tags: ["Research", "Data Science", "Writing"],
+    link: "https://github.com/KeriGagnow",
+  },
 ];
 
 const highlights = [
