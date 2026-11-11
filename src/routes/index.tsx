@@ -73,6 +73,12 @@ export const highlights = [
     text: "I manage the club's finances and budgets while building connections with tech alumni and fellow members. I'm also building a Python/SQL app that speeds up semester budget requests using past attendance data.",
   },
   {
+    emoji: "🛠️",
+    tag: "On campus",
+    title: "Student Tech, University IT",
+    text: "I'm first-level tech support for the St. Thomas community: software support, password resets, classroom technology setup, and recovering phished accounts.",
+  },
+  {
     emoji: "✨",
     tag: "Hackathon",
     title: "Lovable SheBuilds AI Hackathon",
