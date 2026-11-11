@@ -31,3 +31,4 @@ use the editor.
 
 - Prerender the public portfolio root; Pages builds disable Nitro and deploy only `dist/client` because GitHub Pages cannot execute server code.
 - Publish the default branch with GitHub's Pages artifact/OIDC workflow, targeting a root-level user site; this avoids personal deployment credentials and cross-repository writes.
+- Keep images the site displays as imported files under `src/assets` instead of externalizing them to Lovable Assets, because the GitHub Pages static export cannot serve Lovable's `/__l5e/` asset URLs.
