@@ -48,18 +48,20 @@ export const projects = [
   {
     emoji: "🗣️",
     title: "AAC Desktop App",
-    blurb: "A desktop augmentative and alternative communication (AAC) app that helps users express themselves.",
-    detail: "Designed an accessible interface for building and speaking phrases, focused on speed and ease of use for everyday communication.",
-    tags: ["Desktop App", "Accessibility", "UI Design"],
-    link: "https://github.com/KeriGagnow",
+    blurb: "An offline augmentative and alternative communication app that turns shorthand into spoken sentences.",
+    detail:
+      "Built the dream project that sent me into CS: a desktop AAC app for non-verbal and mute autistic children and adults. Local RAG with ChromaDB and Microsoft's Phi3 (via Ollama) expands shorthand into full sentences, then text-to-speech speaks them — everything runs on the machine, so sensitive conversations never touch a cloud server.",
+    tags: ["Python", "Local AI", "Accessibility"],
+    link: "https://github.com/KeriGagnow/Local-AAC-Desktop-App",
   },
   {
-    emoji: "📄",
-    title: "DASC400 Research Paper",
-    blurb: "A research paper written for DASC400, applying data science methods to a real-world question.",
-    detail: "Carried out the full research process — from question and data collection to analysis and written findings.",
-    tags: ["Research", "Data Science", "Writing"],
-    link: "https://github.com/KeriGagnow",
+    emoji: "🏠",
+    title: "Market House Prediction",
+    blurb: "DASC400 final project: predicting next month's home values and market direction for 895 U.S. cities.",
+    detail:
+      "Worked from monthly Zillow data (68,020 city-months, Feb 2018 – May 2024). Linear regression on lag features reached R² = 0.99995 — about 0.3% error on unseen 2024 months — and a decision tree classified market direction with DaysPending (~28 days) as its first split. Analysed in JMP Pro, reproduced in Python with scikit-learn.",
+    tags: ["Python", "scikit-learn", "Machine Learning"],
+    link: "https://github.com/KeriGagnow/DASC400-House-Market-Predictions",
   },
 ];
 
