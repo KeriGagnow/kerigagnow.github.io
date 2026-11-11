@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import desk from "@/assets/cozy-desk.jpg";
+import avatar from "@/assets/keri-avatar.jpg";
+import avatarSmall from "@/assets/keri-avatar-sm.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,7 +28,7 @@ const hotspots = [
   { id: "books", x: 92, y: 40, label: "Books", note: "Proud member of the Association of Women in Science and the French Club." },
 ];
 
-const projects = [
+export const projects = [
   {
     emoji: "📊",
     title: "Mental Health Data Analysis",
@@ -61,7 +63,7 @@ const projects = [
   },
 ];
 
-const highlights = [
+export const highlights = [
   {
     emoji: "💼",
     tag: "Leadership",
