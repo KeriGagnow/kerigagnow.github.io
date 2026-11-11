@@ -133,7 +133,16 @@ function Index() {
   return (
     <main className="mx-auto max-w-5xl px-5 pb-20">
       <nav className="sticky top-3 z-20 mt-3 flex items-center justify-between rounded-full border-2 border-border bg-card/90 px-5 py-2 backdrop-blur">
-        <a href="#top" className="font-display text-lg font-bold text-primary">kg.</a>
+        <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-primary">
+          <img
+            src={avatarSmall}
+            alt=""
+            width={32}
+            height={32}
+            className="hidden h-8 w-8 rounded-full border-2 border-border object-cover sm:block"
+          />
+          kg.
+        </a>
         <div className="flex gap-4 text-sm font-semibold text-muted-foreground">
           <a href="#about" className="hover:text-primary">About</a>
           <a href="#highlights" className="hover:text-primary">Highlights</a>
@@ -145,7 +154,16 @@ function Index() {
       {/* Hero */}
       <section id="top" className="grid items-center gap-10 pt-14 md:grid-cols-[1fr_1.15fr]">
         <div>
-          <p key={g} className="animate-pop-in font-hand text-3xl text-primary">{greetings[g]}</p>
+          <div className="flex items-center gap-4">
+            <img
+              src={avatar}
+              alt="Keri Gagnow"
+              width={96}
+              height={96}
+              className="h-24 w-24 shrink-0 -rotate-3 rounded-full border-4 border-card object-cover shadow-cozy"
+            />
+            <p key={g} className="animate-pop-in font-hand text-3xl text-primary">{greetings[g]}</p>
+          </div>
           <h1 className="mt-1 text-5xl font-bold leading-tight md:text-6xl">I'm Keri Gagnow.</h1>
           <p className="mt-3 inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">
             CS + Data Science @ University of St. Thomas
@@ -222,7 +240,7 @@ function Index() {
       <section id="highlights" className="pt-24">
         <h2 className="text-4xl font-bold">Highlights</h2>
         <p className="font-hand text-2xl text-primary">a few things I'm proud of</p>
-        <div className="mt-6 grid gap-5 md:grid-cols-3">
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
           {highlights.map((h, i) => (
             <article key={h.title} className={`card-cozy card-cozy-hover p-6 ${i === 1 ? "md:rotate-1" : ""}`}>
               <div className="flex items-center justify-between">
