@@ -223,7 +223,8 @@ function Index() {
             <p>
               I'm an undergraduate studying Computer Science and Data Science, currently diving deep into
               algorithms, database design, and computer architecture. Beyond the terminal, I serve as Treasurer of the
-              Computer Science Club, focused on technical growth and community building.
+              Computer Science Club and work on campus as a Student Tech in University IT, supporting the
+              community's software, classrooms and accounts.
             </p>
           </div>
           <div className="card-cozy -rotate-1 bg-accent p-6 text-accent-foreground">
