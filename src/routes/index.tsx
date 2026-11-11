@@ -173,7 +173,7 @@ function Index() {
             ideally with a warm drink nearby.
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
-            <a href="/resume-keri-gagnow.pdf" download className="card-cozy card-cozy-hover bg-primary px-5 py-3 font-bold text-primary-foreground">
+            <a href="/Keri%20Gagnow%20-%20Resume.pdf" download className="card-cozy card-cozy-hover bg-primary px-5 py-3 font-bold text-primary-foreground">
               Download Resume
             </a>
             <a href="https://github.com/KeriGagnow" target="_blank" rel="noreferrer" className="card-cozy card-cozy-hover px-5 py-3 font-bold">
