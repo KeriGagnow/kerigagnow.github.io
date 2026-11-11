@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import desk from "@/assets/cozy-desk.jpg";
+import avatar from "@/assets/keri-avatar.jpg";
+import avatarSmall from "@/assets/keri-avatar-sm.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -26,7 +28,7 @@ const hotspots = [
   { id: "books", x: 92, y: 40, label: "Books", note: "Proud member of the Association of Women in Science and the French Club." },
 ];
 
-const projects = [
+export const projects = [
   {
     emoji: "📊",
     title: "Mental Health Data Analysis",
@@ -46,27 +48,35 @@ const projects = [
   {
     emoji: "🗣️",
     title: "AAC Desktop App",
-    blurb: "A desktop augmentative and alternative communication (AAC) app that helps users express themselves.",
-    detail: "Designed an accessible interface for building and speaking phrases, focused on speed and ease of use for everyday communication.",
-    tags: ["Desktop App", "Accessibility", "UI Design"],
-    link: "https://github.com/KeriGagnow",
+    blurb: "An offline augmentative and alternative communication app that turns shorthand into spoken sentences.",
+    detail:
+      "Built the dream project that sent me into CS: a desktop AAC app for non-verbal and mute autistic children and adults. Local RAG with ChromaDB and Microsoft's Phi3 (via Ollama) expands shorthand into full sentences, then text-to-speech speaks them — everything runs on the machine, so sensitive conversations never touch a cloud server.",
+    tags: ["Python", "Local AI", "Accessibility"],
+    link: "https://github.com/KeriGagnow/Local-AAC-Desktop-App",
   },
   {
-    emoji: "📄",
-    title: "DASC400 Research Paper",
-    blurb: "A research paper written for DASC400, applying data science methods to a real-world question.",
-    detail: "Carried out the full research process — from question and data collection to analysis and written findings.",
-    tags: ["Research", "Data Science", "Writing"],
-    link: "https://github.com/KeriGagnow",
+    emoji: "🏠",
+    title: "Market House Prediction",
+    blurb: "DASC400 final project: predicting next month's home values and market direction for 895 U.S. cities.",
+    detail:
+      "Worked from monthly Zillow data (68,020 city-months, Feb 2018 – May 2024). Linear regression on lag features reached R² = 0.99995 — about 0.3% error on unseen 2024 months — and a decision tree classified market direction with DaysPending (~28 days) as its first split. Analysed in JMP Pro, reproduced in Python with scikit-learn.",
+    tags: ["Python", "scikit-learn", "Machine Learning"],
+    link: "https://github.com/KeriGagnow/DASC400-House-Market-Predictions",
   },
 ];
 
-const highlights = [
+export const highlights = [
   {
     emoji: "💼",
     tag: "Leadership",
     title: "Treasurer, Computer Science Club",
     text: "I manage the club's finances and budgets while building connections with tech alumni and fellow members. I'm also building a Python/SQL app that speeds up semester budget requests using past attendance data.",
+  },
+  {
+    emoji: "🛠️",
+    tag: "On campus",
+    title: "Student Tech, University IT",
+    text: "I'm first-level tech support for the St. Thomas community: software support, password resets, classroom technology setup, and recovering phished accounts.",
   },
   {
     emoji: "✨",
@@ -123,7 +133,16 @@ function Index() {
   return (
     <main className="mx-auto max-w-5xl px-5 pb-20">
       <nav className="sticky top-3 z-20 mt-3 flex items-center justify-between rounded-full border-2 border-border bg-card/90 px-5 py-2 backdrop-blur">
-        <a href="#top" className="font-display text-lg font-bold text-primary">kg.</a>
+        <a href="#top" className="flex items-center gap-2 font-display text-lg font-bold text-primary">
+          <img
+            src={avatarSmall}
+            alt=""
+            width={32}
+            height={32}
+            className="hidden h-8 w-8 rounded-full border-2 border-border object-cover sm:block"
+          />
+          kg.
+        </a>
         <div className="flex gap-4 text-sm font-semibold text-muted-foreground">
           <a href="#about" className="hover:text-primary">About</a>
           <a href="#highlights" className="hover:text-primary">Highlights</a>
@@ -135,7 +154,16 @@ function Index() {
       {/* Hero */}
       <section id="top" className="grid items-center gap-10 pt-14 md:grid-cols-[1fr_1.15fr]">
         <div>
-          <p key={g} className="animate-pop-in font-hand text-3xl text-primary">{greetings[g]}</p>
+          <div className="flex items-center gap-4">
+            <img
+              src={avatar}
+              alt="Keri Gagnow"
+              width={96}
+              height={96}
+              className="h-24 w-24 shrink-0 -rotate-3 rounded-full border-4 border-card object-cover shadow-cozy"
+            />
+            <p key={g} className="animate-pop-in font-hand text-3xl text-primary">{greetings[g]}</p>
+          </div>
           <h1 className="mt-1 text-5xl font-bold leading-tight md:text-6xl">I'm Keri Gagnow.</h1>
           <p className="mt-3 inline-block rounded-full bg-secondary px-4 py-1 text-sm font-bold text-secondary-foreground">
             CS + Data Science @ University of St. Thomas
@@ -195,7 +223,8 @@ function Index() {
             <p>
               I'm an undergraduate studying Computer Science and Data Science, currently diving deep into
               algorithms, database design, and computer architecture. Beyond the terminal, I serve as Treasurer of the
-              Computer Science Club, focused on technical growth and community building.
+              Computer Science Club and work on campus as a Student Tech in University IT, supporting the
+              community's software, classrooms and accounts.
             </p>
           </div>
           <div className="card-cozy -rotate-1 bg-accent p-6 text-accent-foreground">
@@ -212,7 +241,7 @@ function Index() {
       <section id="highlights" className="pt-24">
         <h2 className="text-4xl font-bold">Highlights</h2>
         <p className="font-hand text-2xl text-primary">a few things I'm proud of</p>
-        <div className="mt-6 grid gap-5 md:grid-cols-3">
+        <div className="mt-6 grid gap-5 md:grid-cols-2">
           {highlights.map((h, i) => (
             <article key={h.title} className={`card-cozy card-cozy-hover p-6 ${i === 1 ? "md:rotate-1" : ""}`}>
               <div className="flex items-center justify-between">
