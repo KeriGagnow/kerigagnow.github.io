@@ -19,7 +19,7 @@ export async function preparePages(directory = "dist/client") {
     if (!target.startsWith(`${root}/`)) throw new Error(`Invalid asset path: ${url}`);
     await access(target);
   }
-  await access(resolve(root, "resume-keri-gagnow.pdf"));
+  await access(resolve(root, "Keri Gagnow - Resume.pdf"));
   await writeFile(resolve(root, ".nojekyll"), "");
   return root;
 }

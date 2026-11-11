@@ -12,7 +12,7 @@ async function fixture() {
   directories.push(directory);
   await mkdir(join(directory, "assets"));
   await writeFile(join(directory, "assets/app.js"), "console.log('ready')");
-  await writeFile(join(directory, "resume-keri-gagnow.pdf"), "resume fixture");
+  await writeFile(join(directory, "Keri Gagnow - Resume.pdf"), "resume fixture");
   await writeFile(join(directory, "index.html"), '<h1>Keri Gagnow</h1><script src="/assets/app.js"></script>');
   return directory;
 }
@@ -36,7 +36,7 @@ describe("GitHub Pages export", () => {
 
   it("rejects a missing résumé", async () => {
     const directory = await fixture();
-    await rm(join(directory, "resume-keri-gagnow.pdf"));
+    await rm(join(directory, "Keri Gagnow - Resume.pdf"));
     await expect(preparePages(directory)).rejects.toThrow();
   });
 
